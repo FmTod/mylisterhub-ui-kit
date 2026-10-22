@@ -1,0 +1,14 @@
+name: Check
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  design-copy:
+    name: DESIGN.md copies match
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+    # The skill ships its own copy because plugin installers (Codex) drop symlinks.
+    - run: diff -u DESIGN.md skills/mylisterhub-ui/DESIGN.md
