@@ -1,0 +1,25 @@
+name: "🔖 Release"
+
+on:
+  push:
+    branches:
+    - main
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: release-please
+  cancel-in-progress: false
+
+jobs:
+  release-please:
+    name: Release Please
+    runs-on: ubuntu-latest
+    steps:
+    # GITHUB_TOKEN, not the org App token (not shared with public repos): nothing here listens for `release: published`.
+    - uses: googleapis/release-please-action@v5
+      with:
+        config-file: release-please-config.json
+        manifest-file: .release-please-manifest.json
