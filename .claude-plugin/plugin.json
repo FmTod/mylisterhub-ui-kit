@@ -1,0 +1,10 @@
+{
+  "name": "mylisterhub-ui",
+  "version": "1.0.0",
+  "description": "Prototype MyListerHub screens as static HTML that match the real app: tokens, components, page templates and reference screenshots.",
+  "author": { "name": "FmTod", "url": "https://github.com/FmTod" },
+  "homepage": "https://github.com/FmTod/mylisterhub-ui-kit",
+  "repository": "https://github.com/FmTod/mylisterhub-ui-kit",
+  "license": "SEE LICENSE IN LICENSE",
+  "keywords": ["mylisterhub", "design-system", "prototype", "mockup", "ui"]
+}

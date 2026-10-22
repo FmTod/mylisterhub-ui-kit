@@ -5,18 +5,21 @@ without access to the app's code. Prototypes are single static HTML files.
 
 | Path | What it is |
 | --- | --- |
-| [`skills/mylisterhub-ui/`](skills/mylisterhub-ui) | An agent skill (Claude Code and compatible tools) that builds prototypes from the kit |
-| [`skills/mylisterhub-ui/DESIGN.md`](skills/mylisterhub-ui/DESIGN.md) | The design system in plain language, also usable as a Google Stitch `DESIGN.md` |
+| [`DESIGN.md`](DESIGN.md) | The design system in plain language: palette, type, components, layout. Also a Google Stitch `DESIGN.md` |
+| [`skills/mylisterhub-ui/`](skills/mylisterhub-ui) | An agent skill that builds prototypes from the kit, installable as a plugin (see below) |
 | [`skills/mylisterhub-ui/templates/`](skills/mylisterhub-ui/templates) | List, record and settings page templates with the app frame |
 | [`skills/mylisterhub-ui/assets/`](skills/mylisterhub-ui/assets) | `tokens.css` (colours, light + dark), `components.css` (`mlh-*` classes), the logo |
 | [`skills/mylisterhub-ui/screens/`](skills/mylisterhub-ui/screens) | Screenshots of the real app for comparison |
 
-## Use it with Claude Code
+## Install
 
-```bash
-git clone https://github.com/FmTod/mylisterhub-ui-kit.git
-cp -r mylisterhub-ui-kit/skills/mylisterhub-ui ~/.claude/skills/
-```
+| Agent | Install |
+| --- | --- |
+| Claude Code | `/plugin marketplace add FmTod/mylisterhub-ui-kit`, then `/plugin install mylisterhub-ui@mylisterhub` |
+| Codex | `codex plugin marketplace add FmTod/mylisterhub-ui-kit`, then `codex plugin add mylisterhub-ui@mylisterhub` |
+| Gemini CLI | `gemini extensions install https://github.com/FmTod/mylisterhub-ui-kit` |
+| OpenCode, Cursor and [~80 others](https://github.com/vercel-labs/skills) | `npx skills add FmTod/mylisterhub-ui-kit -a opencode` (or `-a cursor`, …; add `-g` for every project) |
+| Anything else | Copy `skills/mylisterhub-ui/` into your agent's skills folder |
 
 Then ask for a screen, e.g. *"Mock up a MyListerHub page for managing return requests"*. The skill
 picks a template, fills it in and checks it against the screenshots.
@@ -28,7 +31,7 @@ dark mode. `SKILL.md` lists every class and the rules a screen has to follow.
 
 ## Use it with Google Stitch
 
-Paste or upload `skills/mylisterhub-ui/DESIGN.md` as the project's design system.
+Paste or upload [`DESIGN.md`](DESIGN.md) as the project's design system.
 
 ## Fonts
 

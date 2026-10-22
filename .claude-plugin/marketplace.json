@@ -1,0 +1,14 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "mylisterhub",
+  "description": "MyListerHub design and prototyping tools.",
+  "owner": { "name": "FmTod", "url": "https://github.com/FmTod" },
+  "plugins": [
+    {
+      "name": "mylisterhub-ui",
+      "description": "Prototype MyListerHub screens that match the real app.",
+      "source": "./",
+      "category": "design"
+    }
+  ]
+}

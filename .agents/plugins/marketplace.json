@@ -1,0 +1,16 @@
+{
+  "name": "mylisterhub",
+  "interface": { "displayName": "MyListerHub" },
+  "plugins": [
+    {
+      "name": "mylisterhub-ui",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/FmTod/mylisterhub-ui-kit.git",
+        "ref": "main"
+      },
+      "policy": { "installation": "AVAILABLE", "authentication": "ON_USE" },
+      "category": "Design"
+    }
+  ]
+}
