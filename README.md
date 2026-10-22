@@ -44,6 +44,9 @@ Pro installed locally, the CSS picks it up automatically.
 `assets/tokens.css` is generated from the app's theme. Don't edit it here. The app repo's
 `scripts/ui-kit-sync` opens a PR in this repo whenever the theme changes.
 
+`skills/mylisterhub-ui/DESIGN.md` is a copy of the root `DESIGN.md`, because some plugin installers
+drop symlinks. Edit the root file, copy it over, and CI fails if the two differ.
+
 ## License
 
 You may use the kit only to design MyListerHub features. The name, logo and screenshots are reserved.
