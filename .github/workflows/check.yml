@@ -2,13 +2,29 @@ name: Check
 
 on:
   push:
+    branches:
+    - main
   pull_request:
 
 jobs:
-  design-copy:
-    name: DESIGN.md copies match
+  check:
+    name: Check
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v4
+
+    - name: Plugin manifests are valid
+      run: npx -y @anthropic-ai/claude-code plugin validate .
+
+    # Codex caches plugins by version, so a manifest left behind the release never reaches users.
+    - name: Manifest versions match the release
+      run: |
+        release=$(jq -r '."."' .release-please-manifest.json)
+        for f in .claude-plugin/plugin.json gemini-extension.json; do
+          v=$(jq -r .version "$f")
+          [ "$v" = "$release" ] || { echo "::error file=$f::version $v != release $release"; exit 1; }
+        done
+
     # The skill ships its own copy because plugin installers (Codex) drop symlinks.
-    - run: diff -u DESIGN.md skills/mylisterhub-ui/DESIGN.md
+    - name: DESIGN.md copies match
+      run: diff -u DESIGN.md skills/mylisterhub-ui/DESIGN.md
