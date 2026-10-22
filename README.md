@@ -40,3 +40,8 @@ Pro installed locally, the CSS picks it up automatically.
 
 `assets/tokens.css` is generated from the app's theme. Don't edit it here. The app repo's
 `scripts/ui-kit-sync` opens a PR in this repo whenever the theme changes.
+
+## License
+
+You may use the kit only to design MyListerHub features. The name, logo and screenshots are reserved.
+See [LICENSE](LICENSE).
