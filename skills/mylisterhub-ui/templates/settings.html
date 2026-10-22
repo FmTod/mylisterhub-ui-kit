@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>General Settings - MyListerHub</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@300;400;500;600;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="../assets/tokens.css">
+    <link rel="stylesheet" href="../assets/components.css">
+</head>
+<body>
+<div class="mlh-app">
+    <!-- FRAME: keep as is -->
+    <header class="mlh-topnav">
+        <svg class="mlh-topnav__logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 876 234" role="img" aria-label="MyListerHub">
+            <path fill="var(--logo-color, currentColor)" d="M125.43 100.5C113.28 100.5 102.63 106.65 100.08 112.05C96.93 106.5 86.88 100.5 75.63 100.5C65.43 100.5 56.73 105.75 56.73 105.9L56.73 102.3L30.63 102.3L30.63 184.05L56.73 184.05L56.73 135.15C56.73 127.8 61.68 123.15 69.63 123.15C76.68 123.15 81.18 128.1 81.18 136.35L81.18 184.2L106.38 184.2L106.38 135.15C106.38 127.8 111.33 123.15 119.28 123.15C126.48 123.15 130.98 128.1 130.98 136.35L130.98 184.2L156.18 184.2L156.18 132.6C156.18 114.15 142.53 100.5 125.43 100.5ZM180.88 211.05C193.78 211.05 204.73 202.35 210.73 186.6L243.58 102.3L216.73 102.3L198.88 152.7L179.98 102.3L152.68 102.3L185.83 182.7L183.58 187.35C182.23 189.6 179.98 190.5 176.23 190.5C173.98 190.5 170.68 189.3 164.83 186L158.83 205.2C165.88 208.95 174.13 211.05 180.88 211.05ZM247.2 184.05L273.3 184.05L273.3 75L247.2 75L247.2 184.05ZM310.41 102.64L310.41 183.59L284.09 183.59L284.09 102.64L310.41 102.64ZM352.54 185.85C372.34 185.85 386.14 175.05 386.14 158.7C386.14 140.25 369.79 135.3 356.44 131.7C345.94 129 344.29 128.25 344.29 125.55C344.29 124.05 346.39 123 351.34 123C357.64 123 365.14 125.4 373.84 130.8L384.79 111.6C374.29 104.55 362.74 100.5 351.34 100.5C332.29 100.5 318.79 112.2 318.94 127.8C319.09 144.6 332.89 149.4 348.94 153.45C356.74 155.55 360.94 156.6 360.94 159.75C360.94 162 358.24 163.5 352.99 163.5C343.09 163.5 334.99 160.05 326.44 153.9L314.89 172.5C325.84 181.5 339.79 185.85 352.54 185.85ZM438.62 159C435.02 162.45 432.92 163.2 430.22 163.2C427.07 163.2 424.97 160.95 424.97 156.6L424.97 124.2L441.77 124.2L441.77 102.3L424.97 102.3L424.97 81L399.77 81L399.77 102.3L389.12 102.3L389.12 124.2L399.77 124.2L399.77 160.05C399.77 174.9 410.57 185.85 425.12 185.85C431.87 185.85 439.52 182.85 445.37 177.6L438.62 159ZM487.42 162.3C479.02 162.3 473.32 157.5 471.82 152.4L527.02 152.4C527.02 120.3 511.72 100.5 486.37 100.5C462.82 100.5 444.37 118.65 444.37 142.95C444.37 167.7 463.57 185.85 487.57 185.85C499.27 185.85 513.52 180.75 522.07 171.75L505.27 154.5C499.87 159.75 493.12 162.3 487.42 162.3ZM487.27 124.05C495.37 124.05 500.02 128.1 501.22 132.45L472.27 132.45C473.92 128.1 479.62 124.05 487.27 124.05ZM558.33 109.95L558.33 102.3L532.23 102.3L532.23 184.05L558.33 184.05L558.33 144.9C558.33 131.25 567.33 123.15 584.88 123.15L584.88 100.5C570.33 100.5 559.68 107.25 558.33 109.95Z" />
+            <path fill="var(--logo-accent, #38317f)" d="M637.86 100.5C627.51 100.5 618.06 105.45 616.71 107.25L616.71 75L590.61 75L590.61 184.05L616.71 184.05L616.71 136.05C616.71 128.55 622.56 123.15 630.81 123.15C638.61 123.15 643.41 128.4 643.41 137.25L643.41 184.05L668.76 184.05L668.76 132.6C668.76 114.15 655.56 100.5 637.86 100.5ZM728.01 102.3L730.11 150.75L729.96 150.3C727.86 157.8 722.01 163.2 713.76 163.2C705.96 163.2 701.16 157.95 701.16 149.1L701.16 102.3L675.81 102.3L675.81 153.75C675.81 172.2 689.01 185.85 706.71 185.85C717.21 185.85 726.96 180.9 728.01 179.25L728.01 184.05L754.11 184.05L754.11 102.3L728.01 102.3ZM811.01 100.5C799.76 100.5 789.86 105.6 787.16 109.05L787.16 75L761.06 75L761.06 184.05L787.16 184.05L787.16 177.3C789.86 180.75 799.76 185.85 811.01 185.85C832.61 185.85 848.81 167.7 848.81 143.1C848.81 118.65 832.61 100.5 811.01 100.5ZM804.71 163.2C794.96 163.2 788.21 156.6 787.16 145.95L787.16 140.25C788.21 129.75 794.96 123.15 804.71 123.15C815.96 123.15 823.31 131.1 823.31 143.1C823.31 155.25 815.96 163.2 804.71 163.2Z" />
+            <path fill="var(--logo-color, currentColor)" d="M259 20L261 20L293 84L293 86L227 86L227 84Z" />
+        </svg>
+        <span class="mlh-spacer"></span>
+        <button class="mlh-btn mlh-btn--ghost mlh-btn--icon" type="button" onclick="document.documentElement.classList.toggle('dark')" aria-label="Toggle dark mode"><i class="fa-regular fa-moon"></i></button>
+        <button class="mlh-btn mlh-btn--ghost mlh-btn--icon" type="button" aria-label="Need help"><i class="fa-regular fa-life-ring"></i></button>
+        <div class="mlh-topnav__user"><div><strong>Admin User</strong><small>Business</small></div><span class="mlh-avatar">AU</span></div>
+    </header>
+    <nav class="mlh-sidenav" aria-label="Main">
+        <a href="#"><i class="fa-solid fa-gauge"></i>Dashboard</a>
+        <a href="#"><i class="fa-solid fa-list"></i>Listings</a>
+        <a href="#"><i class="fa-solid fa-rotate"></i>Operations</a>
+        <a href="#"><i class="fa-solid fa-box-open"></i>Products</a>
+        <a href="#"><i class="fa-solid fa-cart-shopping"></i>Orders</a>
+        <a href="#"><i class="fa-solid fa-tags"></i>Offers</a>
+        <a href="#"><i class="fa-solid fa-file-invoice-dollar"></i>Accounting</a>
+        <a href="#"><i class="fa-regular fa-address-book"></i>Contacts</a>
+        <a href="#"><i class="fa-regular fa-envelope"></i>Messages</a>
+        <a href="#"><i class="fa-solid fa-car"></i>Compatibility</a>
+        <a href="#" class="is-active"><i class="fa-solid fa-gear"></i>Settings</a>
+    </nav>
+    <!-- /FRAME -->
+
+    <div style="display:flex; min-height:0">
+        <!-- Settings sub-nav: part of the settings frame, keep it on every settings page. -->
+        <nav class="mlh-subnav" aria-label="Settings">
+            <a href="#"><i class="fa-regular fa-credit-card"></i>Billing</a>
+            <a href="#" class="is-active"><i class="fa-solid fa-gear"></i>General</a>
+            <a href="#"><i class="fa-regular fa-user"></i>Profile</a>
+            <a href="#"><i class="fa-regular fa-building"></i>Organization</a>
+            <a href="#"><i class="fa-solid fa-store"></i>Shops</a>
+            <a href="#"><i class="fa-solid fa-bag-shopping"></i>Orders</a>
+            <a href="#"><i class="fa-solid fa-truck"></i>Shipping</a>
+            <a href="#"><i class="fa-solid fa-puzzle-piece"></i>Integrations</a>
+            <a href="#"><i class="fa-regular fa-file-lines"></i>Templates</a>
+        </nav>
+
+        <main class="mlh-main" style="flex:1">
+            <header class="mlh-page-header"><div class="mlh-page-header__title"><h1>General</h1></div></header>
+
+            <div class="mlh-container">
+                <section class="mlh-section">
+                    <div class="mlh-section__header">
+                        <div>
+                            <h2>Enabled eBay sites</h2>
+                            <p class="mlh-section__description">Imports and business policies will only apply to selected sites.</p>
+                        </div>
+                    </div>
+                    <div class="mlh-section__body mlh-grid mlh-grid--3">
+                        <label class="mlh-check"><input type="checkbox" checked>US <span class="mlh-badge mlh-badge--light">ebay.com</span></label>
+                        <label class="mlh-check"><input type="checkbox">Canada <span class="mlh-badge mlh-badge--light">ebay.ca</span></label>
+                        <label class="mlh-check"><input type="checkbox">UK <span class="mlh-badge mlh-badge--light">ebay.co.uk</span></label>
+                    </div>
+                </section>
+
+                <!-- Settings that save on change have no save row. -->
+                <section class="mlh-section">
+                    <div class="mlh-section__header"><h2>Listings</h2></div>
+                    <div class="mlh-section__body mlh-stack" style="gap:8px">
+                        <label class="mlh-switch"><input type="checkbox">Listing auto synchronization</label>
+                        <span class="mlh-help">Keeps the app and connected marketplaces in sync both ways.</span>
+                    </div>
+                </section>
+
+                <div class="mlh-alert mlh-alert--warning">
+                    <i class="fa-solid fa-triangle-exclamation"></i>
+                    <div><strong>Reconnect required</strong>Your eBay token expires in 3 days.</div>
+                </div>
+
+                <p class="mlh-empty">No automations yet.</p>
+            </div>
+        </main>
+    </div>
+</div>
+</body>
+</html>
