@@ -19,6 +19,8 @@
     --input: #e4e4e7;
     --ring: #40acff;
     --overlay: rgb(0 0 0 / 0.5);
+    /* Third-party logos are drawn for a light background, so .dark leaves this white. */
+    --logo-surface: #ffffff;
 
     --sidebar: #ffffff;
     --sidebar-foreground: #3f3f46;
